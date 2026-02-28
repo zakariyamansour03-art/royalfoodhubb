@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Officiel - Café ZIZ</title>
+    <!-- Fonts pour le côté luxe (Cinzel pour les titres, Montserrat pour le texte) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-wrapper">
+        <!-- Cadre intérieur doré -->
+        <div class="menu-border">
+
+            <!-- SÉLECTEUR DE LANGUE -->
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="fr">🇫🇷 Français</button>
+                <button class="lang-btn" data-lang="ar">🇲🇦 العربية</button>
+                <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+            </div>
+            
+            <!-- EN-TÊTE -->
+            <header class="menu-header">
+                <h1 class="logo">CAFÉ ZIZ</h1>
+                <p class="subtitle" data-i18n="subtitle">Restaurant – Café – Terrasse</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Azilal</p>
+                <div class="separator-lg"></div>
+            </header>
+
+            <!-- CONTENU PRINCIPAL -->
+            
+            <!-- SECTION PETIT-DÉJEUNER (Ftour) -->
+            <div class="ftour-section">
+                <h2 class="category-title main-cat"><i class="fas fa-coffee"></i> <span data-i18n="breakfast_title">LE PETIT-DÉJEUNER</span></h2>
+                <div class="menu-content">
+                    <div class="menu-column">
+                        <div class="category">
+                            <h3 class="sub-cat"><i class="fas fa-bread-slice"></i> <span data-i18n="ftor_chamali">Ftor Chamali</span></h3>
+                            <p class="ftour-desc" data-i18n="ftor_chamali_desc">Khobz • Zayt zitoun • Zayt beldi • Jben • Zaitoun • Atay / Café • Bayd (maqli ou omelette)</p>
+                        </div>
+                        <div class="category">
+                            <h3 class="sub-cat"><i class="fas fa-croissant"></i> <span data-i18n="ftor_fransi">Ftor Fransi</span></h3>
+                            <p class="ftour-desc" data-i18n="ftor_fransi_desc">Baguette / Croissant • Beurre • Confiture • Jben • Café au lait / Chocolat chaud • Jus</p>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="category">
+                            <h3 class="sub-cat"><i class="fas fa-egg"></i> <span data-i18n="omelettes">Omelettes</span></h3>
+                            <ul class="items">
+                                <li><span class="item-name" data-i18n="omelette_fromage">Omelette Fromage</span> <span class="small-desc" data-i18n="omelette_fromage_desc">(Oeuf + Fromage + Pain)</span></li>
+                                <li><span class="item-name" data-i18n="omelette_thon">Omelette Thon</span> <span class="small-desc" data-i18n="omelette_thon_desc">(Oeuf + Thon + Fromage + Pain)</span></li>
+                                <li><span class="item-name" data-i18n="omelette_mix">Omelette Mix</span> <span class="small-desc" data-i18n="omelette_mix_desc">(Oeuf + Fromage + Thon + Légumes)</span></li>
+                                <li><span class="item-name" data-i18n="omelette_ziz">Omelette Ziz</span> <span class="small-desc" data-i18n="omelette_ziz_desc">(Oeuf + Fromage + Thon + Charcuterie)</span></li>
+                                <li><span class="item-name" data-i18n="omelette_speciale">Omelette Spéciale</span> <span class="small-desc" data-i18n="omelette_speciale_desc">(... + Charcuterie + Légumes)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION DU MILIEU (3 COLONNES pour équilibrer) -->
+            <div class="menu-content top-margin">
+                
+                <!-- COLONNE 1 -->
+                <div class="menu-column">
+                    <!-- PANINI -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-bread-slice"></i> <span data-i18n="panini">PANINI</span></h2>
+                        <ul class="items">
+                            <li><span class="item-name" data-i18n="dinde">Dinde</span><span class="dots"></span><span class="item-price">18 DH</span></li>
+                            <li><span class="item-name" data-i18n="viande_hachee">Viande hachée</span><span class="dots"></span><span class="item-price">20 DH</span></li>
+                            <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">22 DH</span></li>
+                            <li><span class="item-name" data-i18n="royal">Royal</span><span class="dots"></span><span class="item-price">24 DH</span></li>
+                            <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">24 DH</span></li>
+                            <li><span class="item-name" data-i18n="fruit_de_mer">Fruit de mer</span><span class="dots"></span><span class="item-price">25 DH</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- SANDWICH -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-hotdog"></i> <span data-i18n="sandwich">SANDWICH</span></h2>
+                        <ul class="items">
+                            <li><span class="item-name" data-i18n="dinde">Dinde</span><span class="dots"></span><span class="item-price">18 DH</span></li>
+                            <li><span class="item-name" data-i18n="viande_hachee">Viande hachée</span><span class="dots"></span><span class="item-price">20 DH</span></li>
+                            <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">22 DH</span></li>
+                            <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">24 DH</span></li>
+                            <li><span class="item-name" data-i18n="fruit_de_mer">Fruit de mer</span><span class="dots"></span><span class="item-price">25 DH</span></li>
+                            <li><span class="item-name" data-i18n="royal">Royal</span><span class="dots"></span><span class="item-price">25 DH</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COLONNE 2 -->
+                <div class="menu-column">
+                    <!-- TACOS -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-utensils"></i> <span data-i18n="tacos">TACOS</span></h2>
+                        <ul class="items">
+                            <li><span class="item-name" data-i18n="viande_hachee">Viande hachée</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="dinde">Dinde</span><span class="dots"></span><span class="item-price">32 DH</span></li>
+                            <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="royal">Royal</span><span class="dots"></span><span class="item-price">42 DH</span></li>
+                            <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="fruit_de_mer">Fruit de mer</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="kabda">Kabda</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="cordon_bleu">Cordon bleu</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- BURGER -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-hamburger"></i> <span data-i18n="burger">BURGER</span></h2>
+                        <ul class="items">
+                            <li><span class="item-name" data-i18n="chicken">Chicken</span><span class="dots"></span><span class="item-price">30 DH</span></li>
+                            <li><span class="item-name" data-i18n="american">Américan</span><span class="dots"></span><span class="item-price">34 DH</span></li>
+                            <li><span class="item-name" data-i18n="cheeseburger">Cheeseburger</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="royal">Royal</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COLONNE 3 -->
+                <div class="menu-column">
+                    <!-- PIZZA -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-pizza-slice"></i> <span data-i18n="pizza">PIZZA</span></h2>
+                        <ul class="items">
+                            <li><span class="item-name" data-i18n="margarita">Margarita</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="fromages_4">4 Fromages</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="dinde_fume">Dinde fumé</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="viande_hachee">Viande hachée</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="dinde">Dinde</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="thon">Thon</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="saison_4">4 Saison</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="calzone">Calzone</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name" data-i18n="fruit_de_mer">Fruit de mer</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-content">
+                <!-- COLONNE GAUCHE (Four, Plats) -->
+                <div class="menu-column">
+                    <!-- PASTICHIO, GRATIN & SIGAR -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-bacon"></i> <span data-i18n="four_snack">FOUR & SNACK</span></h2>
+                        <div class="grid-list-four">
+                            <div>
+                                <h3 class="sub-cat-mini" data-i18n="pastichio">Pastichio</h3>
+                                <ul class="items">
+                                    <li><span class="item-name" data-i18n="viande_hachee">Viande hachée</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                                    <li><span class="item-name" data-i18n="dinde">Dinde</span><span class="dots"></span><span class="item-price">30 DH</span></li>
+                                    <li><span class="item-name" data-i18n="royal">Royal</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                                    <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">45 DH</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="sub-cat-mini" data-i18n="gratin_sigar">Gratin & Sigar</h3>
+                                <ul class="items">
+                                    <li><span class="item-name" data-i18n="gratin_mix">Gratin Mix</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                                    <li><span class="item-name" data-i18n="gratin_royal">Gratin Royal / Ziz</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                                    <li><span class="item-name" data-i18n="sigar_mix">Sigar Mix</span><span class="dots"></span><span class="item-price">20 DH</span></li>
+                                    <li><span class="item-name" data-i18n="sigar_royal">Sigar Royal / Ziz</span><span class="dots"></span><span class="item-price">25 DH</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLONNE DROITE (Salades) -->
+                <div class="menu-column">
+                    <!-- SALADES -->
+                    <div class="category">
+                        <h2 class="category-title"><i class="fas fa-leaf"></i> <span data-i18n="salade">SALADE</span></h2>
+                        <ul class="items grid-list-salades">
+                            <li><span class="item-name" data-i18n="marocaine">Marocaine</span><span class="dots"></span><span class="item-price">20 DH</span></li>
+                            <li><span class="item-name" data-i18n="american">Américan</span><span class="dots"></span><span class="item-price">35 DH</span></li>
+                            <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="micsican">Micsican</span><span class="dots"></span><span class="item-price">40 DH</span></li>
+                            <li><span class="item-name" data-i18n="sizar">Sizar</span><span class="dots"></span><span class="item-price">50 DH</span></li>
+                            <li><span class="item-name" data-i18n="chaf">Chaf</span><span class="dots"></span><span class="item-price">60 DH</span></li>
+                            <li><span class="item-name" data-i18n="royal">Royal</span><span class="dots"></span><span class="item-price">65 DH</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION PLAT ET TRADITION (Tajine / Couscous / Plat / Glaces) -->
+            <div class="menu-content flex-three-col top-margin-border">
+                <div class="category small-cat">
+                     <h2 class="category-title"><i class="fas fa-utensils"></i> <span data-i18n="plat">PLAT</span></h2>
+                     <ul class="items">
+                         <li><span class="item-name" data-i18n="brochette_dinde">Brochette dinde</span><span class="dots"></span><span class="item-price">45 DH</span></li>
+                         <li><span class="item-name" data-i18n="viande_hachee">Viande hachée</span><span class="dots"></span><span class="item-price">50 DH</span></li>
+                         <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">60 DH</span></li>
+                         <li><span class="item-name">ZIZ</span><span class="dots"></span><span class="item-price">60 DH</span></li>
+                         <li><span class="item-name" data-i18n="escalope">Escalope</span><span class="dots"></span><span class="item-price">70 DH</span></li>
+                     </ul>
+                </div>
+                
+                <div class="category small-cat">
+                    <h2 class="category-title"><i class="fas fa-bowl-food"></i> <span data-i18n="couscous">COUSCOUS</span> <span class="badge badge-lg" data-i18n="vendredi_badge">Vendredi Uniquement</span></h2>
+                    <p class="tagine-info"><strong data-i18n="tagine_info">TAGINE :</strong> <span data-i18n="tagine_desc">Sur commande</span></p>
+                    <p class="couscous-info"><strong data-i18n="couscous_info">COUSCOUS :</strong> <span data-i18n="couscous_desc">Le Spécial du</span> <strong style="color: #fff;" data-i18n="vendredi">Vendredi</strong> 🕌</p>
+                    <ul class="items no-price list-margin">
+                        <li data-i18n="couscous_poulet">Couscous poulet</li>
+                        <li data-i18n="couscous_viande">Couscous viande</li>
+                        <li data-i18n="couscous_tfaya">Couscous tfaya</li>
+                        <li data-i18n="couscous_mix">Couscous mix</li>
+                        <li style="color: var(--gold-light); font-weight: 500;"><i class="fas fa-glass-water" style="color: #fff; margin-right: 5px;"></i> <span data-i18n="lben">Lben</span> 🥛</li>
+                    </ul>
+                </div>
+                
+                <div class="category small-cat">
+                    <h2 class="category-title"><i class="fas fa-ice-cream"></i> <span data-i18n="glaces">LES GLACES</span></h2>
+                    <ul class="items no-price grid-list">
+                        <li data-i18n="fraise">Fraise</li>
+                        <li data-i18n="nougat">Nougat</li>
+                        <li data-i18n="chocolat">Chocolat</li>
+                        <li data-i18n="pistache">Pistache</li>
+                        <li data-i18n="vanille">Vanille</li>
+                    </ul>
+                    <p class="glace-price"><span data-i18n="la_boule">La Boule :</span> <span class="price-hl">20 DH</span></p>
+                    <ul class="items list-margin">
+                        <li><span class="item-name" data-i18n="mix">Mix</span><span class="dots"></span><span class="item-price">25 DH</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION À PROPOS -->
+            <div class="about-section">
+                <div class="about-content">
+                    <h3 class="about-title"><i class="fas fa-star"></i> <span data-i18n="about_title">Mieux nous connaître</span></h3>
+                    <p class="about-text" data-i18n="about_text" data-i18n-html="true"><strong>Café ZIZ</strong> est l'un des restaurants et cafés les plus réputés à <strong>Azilal</strong>, connu pour la qualité de ses plats et son service raffiné 👑.</p>
+                    
+                    <div class="about-features">
+                        <h4 data-i18n="about_features_title">⭐ Ce qui distingue Café ZIZ :</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="feature_1">Produits frais & Haute qualité</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="feature_2">Prix accessibles à tous</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="feature_3">Espace agréable et confortable</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="feature_4">Service rapide et respectueux</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="feature_5">Idéal pour familles et jeunes</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-vision">
+                        <h4 data-i18n="about_vision_title">🎯 Notre Objectif :</h4>
+                        <p data-i18n="about_vision_text" data-i18n-html="true">Offrir une expérience exceptionnelle alliant :<br><strong>Goût – Qualité – Confort – Confiance</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIED DE MENU -->
+            <footer class="menu-footer">
+                <div class="slogan-container">
+                    <p class="slogan" data-i18n="slogan">Qualité – Goût – Service</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/profile.php?id=61587702085567" target="_blank" title="Facebook Café ZIZ"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/station_restaurant_ziz?igsh=MXFtaHEzbTh1YmVvZw==" target="_blank" title="Instagram Café ZIZ"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://www.instagram.com/station_restaurant_ziz?igsh=MXFtaHEzbTh1YmVvZw==&color=BF953F&bgcolor=060606" alt="QR Code Instagram" class="qr-code">
+                    <p class="qr-text"><i class="fab fa-instagram" style="color: var(--gold-primary);"></i> Suivez-nous<br>sur Instagram</p>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+
+    <script src="translate.js"></script>
+</body>
+</html>
